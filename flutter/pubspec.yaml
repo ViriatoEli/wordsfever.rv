@@ -1,0 +1,42 @@
+name: words_fever
+description: Words Fever — Gioco di parole multiplayer. Progetto 4I 2026.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Auth
+  google_sign_in: ^6.2.1
+  flutter_facebook_auth: ^7.1.1
+
+  # State management (lightweight)
+  provider: ^6.1.2
+
+  # Animations
+  flutter_animate: ^4.5.0
+
+  # UI utilities
+  gap: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets (add your logo/fonts here)
+  # assets:
+  #   - assets/images/
+
+  # Optional: custom font
+  # fonts:
+  #   - family: BebasNeue
+  #     fonts:
+  #       - asset: assets/fonts/BebasNeue-Regular.ttf
