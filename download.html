@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scarica Words Fever — APK &amp; IPA gratis</title>
-  <meta name="description" content="Scarica Words Fever gratis. APK per Android e IPA per iOS. Installazione guidata senza Play Store o App Store." />
+  <title>Scarica Words Fever — APK gratis per Android</title>
+  <meta name="description" content="Scarica Words Fever gratis. APK per Android. Installazione guidata senza Play Store." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
 
@@ -53,16 +54,21 @@
 <!-- ══ PLATFORM SELECTOR ══ -->
 <section class="section" id="guida">
   <div class="sec-head c">
-    <p class="eyebrow c reveal">Scegli la tua piattaforma</p>
+    <p class="eyebrow c reveal">Solo Android</p>
     <h2 class="sec-title reveal d1">COME INSTALLARLO</h2>
-    <p class="sec-sub reveal d2">Segui la guida per il tuo dispositivo. Due click e sei dentro.</p>
+    <p class="sec-sub reveal d2">Guida passo per passo. Due click e sei dentro.</p>
   </div>
 
   <!-- Big platform download cards -->
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-bottom:3rem">
+  <div style="display:flex;justify-content:center;margin-bottom:3rem">
+  <div style="max-width:340px;width:100%">
 
     <div class="card reveal" data-tilt style="--card-accent:var(--fire);--card-glow:rgba(255,77,28,.1);text-align:center;padding:2.5rem 2rem">
-      <div style="font-size:3.5rem;margin-bottom:1.5rem">🤖</div>
+      <div style="margin-bottom:1.5rem;display:flex;justify-content:center">
+        <svg width="56" height="56" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#3DDC84" d="M17.05 15.28c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm-10 0c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm10.35-5.12l1.79-3.1c.1-.17.04-.38-.13-.48-.17-.1-.38-.04-.48.13l-1.82 3.14C15.38 9.27 13.74 8.9 12 8.9s-3.38.37-4.76.95L5.42 6.71c-.1-.17-.31-.23-.48-.13-.17.1-.23.31-.13.48L6.6 10.16C4.2 11.55 2.59 14.11 2.5 17h19c-.09-2.89-1.7-5.45-4.1-6.84z"/>
+        </svg>
+      </div>
       <div style="font-family:var(--fd);font-size:1.6rem;letter-spacing:.04em;margin-bottom:.5rem">ANDROID</div>
       <p style="font-size:.88rem;color:var(--muted);margin-bottom:1.75rem;line-height:1.6">Compatibile con Android 6.0 e superiori. Installazione in 30 secondi.</p>
       <div style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.25rem">
@@ -75,36 +81,18 @@
         Scarica APK
       </a>
     </div>
-
-    <div class="card reveal d1" data-tilt style="--card-accent:rgba(255,255,255,.3);--card-glow:rgba(255,255,255,.05);text-align:center;padding:2.5rem 2rem">
-      <div style="font-size:3.5rem;margin-bottom:1.5rem"></div>
-      <div style="font-family:var(--fd);font-size:1.6rem;letter-spacing:.04em;margin-bottom:.5rem">iOS / IPHONE</div>
-      <p style="font-size:.88rem;color:var(--muted);margin-bottom:1.75rem;line-height:1.6">Via AltStore o Sideloadly. Richiede PC e 5 minuti la prima volta.</p>
-      <div style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.25rem">
-        <div style="display:flex;justify-content:space-between;font-size:.8rem"><span style="color:var(--muted)">Versione</span><span style="font-weight:700">1.0.0</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:.8rem"><span style="color:var(--muted)">Formato</span><span style="font-weight:700">.ipa</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:.8rem"><span style="color:var(--muted)">Requisiti</span><span style="font-weight:700">iOS 14+</span></div>
-      </div>
-      <a href="words_fever.ipa" download="WordsFever.ipa" class="btn btn-ghost" style="width:100%;justify-content:center">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14v-2H5v2zm7-18l-7 7h4v6h6v-6h4l-7-7z"/></svg>
-        Scarica IPA
-      </a>
-    </div>
-
+  </div>
   </div>
 
-  <!-- Step-by-step tabs -->
-  <div class="tabs-group reveal">
-    <div class="tabs">
-      <button class="tab on" id="tab-a" data-tab="a" onclick="setTab('a',this)">🤖 Guida Android</button>
-      <button class="tab"    id="tab-i" data-tab="i" onclick="setTab('i',this)"> Guida iOS</button>
-    </div>
-  </div>
+  <!-- Step-by-step guide -->
+  <div style="margin-top:2rem"></div>
 
-  <div id="tab-a" class="tab-panel on reveal">
+  <div class="reveal">
     <div class="icard">
       <div class="icard-head">
-        <div class="icard-icon a">🤖</div>
+        <div class="icard-icon a" style="padding:10px">
+          <svg width="28" height="28" viewBox="0 0 24 24"><path fill="#3DDC84" d="M17.05 15.28c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm-10 0c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm10.35-5.12l1.79-3.1c.1-.17.04-.38-.13-.48-.17-.1-.38-.04-.48.13l-1.82 3.14C15.38 9.27 13.74 8.9 12 8.9s-3.38.37-4.76.95L5.42 6.71c-.1-.17-.31-.23-.48-.13-.17.1-.23.31-.13.48L6.6 10.16C4.2 11.55 2.59 14.11 2.5 17h19c-.09-2.89-1.7-5.45-4.1-6.84z"/></svg>
+        </div>
         <div>
           <div class="icard-title">Installa su Android</div>
           <div class="icard-sub">~30 secondi • Android 6.0+</div>
@@ -131,40 +119,6 @@
     </div>
   </div>
 
-  <div id="tab-i" class="tab-panel reveal">
-    <div class="icard">
-      <div class="icard-head">
-        <div class="icard-icon i"></div>
-        <div>
-          <div class="icard-title">Installa su iPhone</div>
-          <div class="icard-sub">Via AltStore o Sideloadly • iOS 14+</div>
-        </div>
-      </div>
-      <ol class="isteps">
-        <li class="istep">
-          <div class="istep-n">1</div>
-          <div class="istep-t">Scarica il file <code>WordsFever.ipa</code> cliccando il bottone qui sopra.</div>
-        </li>
-        <li class="istep">
-          <div class="istep-n">2</div>
-          <div class="istep-t">Sul tuo PC o Mac, scarica e installa <strong>AltStore</strong> o <strong>Sideloadly</strong> (entrambi gratuiti).</div>
-        </li>
-        <li class="istep">
-          <div class="istep-n">3</div>
-          <div class="istep-t">Collega l'iPhone al PC con <strong>cavo USB</strong>, apri AltStore/Sideloadly e trascina il file <code>.ipa</code> nell'app.</div>
-        </li>
-        <li class="istep">
-          <div class="istep-n">4</div>
-          <div class="istep-t">Sull'iPhone: <strong>Impostazioni → Generali → VPN e gestione dispositivo</strong> → tocca il profilo e premi <strong>Fidati</strong>.</div>
-        </li>
-        <li class="istep">
-          <div class="istep-n">5</div>
-          <div class="istep-t">Apri Words Fever dall'home screen. Se chiede di "Consentire", premi Consenti.</div>
-        </li>
-      </ol>
-      <div class="inote">⚠️ <span>Richiede Apple ID gratuito. Il certificato dura <strong>7 giorni</strong> senza Apple Developer Account (99€/anno). Basta reinstallare seguendo la stessa procedura.</span></div>
-    </div>
-  </div>
 </section>
 
 <div class="divider"></div>
@@ -195,14 +149,6 @@
 
     <div class="faq-item reveal d2">
       <button class="faq-q" onclick="toggleFAQ(this)">
-        <span>Il certificato iOS scade dopo 7 giorni — cosa faccio?</span>
-        <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-      </button>
-      <div class="faq-a"><div class="faq-a-inner">È una limitazione di Apple per le app installate fuori App Store con un Apple ID gratuito. Basta ripetere l'installazione ogni 7 giorni con AltStore o Sideloadly — i dati dell'app vengono conservati. Con un Apple Developer Account (99€/anno) il limite scompare.</div></div>
-    </div>
-
-    <div class="faq-item reveal d3">
-      <button class="faq-q" onclick="toggleFAQ(this)">
         <span>Su quali dispositivi Android funziona?</span>
         <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
       </button>
@@ -214,7 +160,7 @@
         <span>Posso aggiornare l'app quando esce una nuova versione?</span>
         <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
       </button>
-      <div class="faq-a"><div class="faq-a-inner">Sì. Quando una nuova versione è disponibile, viene pubblicata su questo sito. Su Android basta scaricare il nuovo APK e installarlo sopra il precedente (i dati vengono conservati). Su iOS si ripete la stessa procedura con il nuovo IPA.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Sì. Quando una nuova versione è disponibile, viene pubblicata su questo sito. Su Android basta scaricare il nuovo APK e installarlo sopra il precedente — i dati dell'app vengono conservati automaticamente.</div></div>
     </div>
   </div>
 </section>
@@ -235,7 +181,6 @@
     <div class="footer-col">
       <div class="footer-col-title">Download diretto</div>
       <a href="words_fever.apk" download>APK — Android</a>
-      <a href="words_fever.ipa" download>IPA — iOS</a>
     </div>
     <div class="footer-pill">🔥 Fatto con <strong>Flutter</strong></div>
   </div>
