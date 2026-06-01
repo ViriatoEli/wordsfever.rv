@@ -9,9 +9,10 @@
   background: radial-gradient(circle, rgba(255,77,28,0.55), transparent 70%);
   pointer-events: none; z-index: 9998; top: 0; left: 0;
   mix-blend-mode: screen; filter: blur(1.5px);
-  transition: width .2s, height .2s;
+  transition: width .2s, height .2s, opacity .4s;
 }
 .cursor.big { width: 40px; height: 40px; background: radial-gradient(circle, rgba(255,77,28,0.3), transparent 70%); }
+.cursor.hidden { opacity: 0; }
 @media (hover: none) { .cursor { display: none; } }
 
 /* ── NAV ── */
@@ -140,7 +141,8 @@ nav.scrolled { background: rgba(7,7,14,0.94); }
 }
 .page-hero-sub {
   font-size: clamp(1rem, 2vw, 1.15rem); color: var(--text2);
-  max-width: 500px; line-height: 1.8; margin-top: 1.5rem; z-index: 2;
+  max-width: 500px; line-height: 1.8; margin: 1.5rem auto 0; z-index: 2;
+  text-align: center;
 }
 .page-hero-orb {
   position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none;
@@ -251,7 +253,7 @@ nav.scrolled { background: rgba(7,7,14,0.94); }
 .wchip.on { background: rgba(255,77,28,.14); border-color: rgba(255,77,28,.28); color: var(--fire2); }
 
 /* ── MODE PREVIEW CARDS ── */
-.mgrid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; }
+.mgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
 
 .mcard {
   background: var(--bg2); border: 1px solid var(--border);
@@ -274,7 +276,10 @@ nav.scrolled { background: rgba(7,7,14,0.94); }
 .mcard:nth-child(2) { --mc: #FF1C4D; --mg: rgba(255,28,77,.06); --ms: rgba(255,28,77,.13); }
 .mcard:nth-child(3) { --mc: #7C1CFF; --mg: rgba(124,28,255,.06); --ms: rgba(124,28,255,.13); }
 .mcard:nth-child(4) { --mc: #1CBBFF; --mg: rgba(28,187,255,.06); --ms: rgba(28,187,255,.13); }
+.mcard:nth-child(5) { --mc: #FFB800; --mg: rgba(255,184,0,.06); --ms: rgba(255,184,0,.13); }
+.mcard:nth-child(6) { --mc: #00C896; --mg: rgba(0,200,150,.06); --ms: rgba(0,200,150,.13); }
 
+.mcard { text-align: center; }
 .mcard-emoji { font-size: 2rem; }
 .mcard-name  { font-family: var(--fd); font-size: 1.2rem; letter-spacing: .04em; }
 .mcard-desc  { font-size: .85rem; color: var(--muted); line-height: 1.6; flex: 1; }
