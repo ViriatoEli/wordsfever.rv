@@ -1,29 +1,18 @@
 /* ═══════════════════════════════════════
    WORDS FEVER · fx.js
-   Custom cursor · 3D card tilt · Magnetic buttons
+   3D card tilt · Magnetic buttons
 ═══════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ── CUSTOM CURSOR ── */
-  const cursor = document.createElement('div');
-  cursor.className = 'cursor';
-  document.body.appendChild(cursor);
-
-  let mx = -200, my = -200, cx = -200, cy = -200;
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; }, { passive: true });
-
-  document.querySelectorAll('a, button, [data-tilt]').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('big'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
-  });
-
-  (function cursorLoop() {
-    cx += (mx - cx) * 0.12;
-    cy += (my - cy) * 0.12;
-    cursor.style.transform = `translate(${cx - 11}px, ${cy - 11}px)`;
-    requestAnimationFrame(cursorLoop);
-  })();
+  /* Hide scroll-hint as soon as user starts scrolling */
+  const scrollHint = document.querySelector('.scroll-hint');
+  if (scrollHint) {
+    window.addEventListener('scroll', function hideHint() {
+      scrollHint.classList.add('hidden');
+      window.removeEventListener('scroll', hideHint);
+    }, { passive: true });
+  }
 
   /* ── 3D CARD TILT ── */
   document.querySelectorAll('[data-tilt]').forEach(card => {
