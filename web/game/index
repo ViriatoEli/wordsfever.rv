@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Words Fever - Il Gioco</title>
+  <meta name="theme-color" content="#FF4D1C">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Fonts (same as landing page) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  
+  <div class="noise-overlay"></div>
+
+  <!-- APP CONTAINER -->
+  <div id="app">
+    
+    <!-- SCREEN 1: SPLASH -->
+    <div id="screen-splash" class="screen active flex-center">
+      <div class="splash-logo">
+        <div class="splash-icon">🔥</div>
+        <div class="splash-text">WORDS <span>FEVER</span></div>
+      </div>
+    </div>
+
+    <!-- SCREEN 2: HOME (Mode Selection) -->
+    <div id="screen-home" class="screen">
+      <header class="app-header">
+        <div class="app-title">🔥 WORDS FEVER</div>
+        <div class="app-version">v1.0</div>
+      </header>
+      
+      <div class="home-hero">
+        <h1 class="hero-title">SCEGLI<br><span class="grad">LA TUA ARMA</span></h1>
+        <p class="hero-sub">4 modalità. 1 telefono. Serata perfetta.</p>
+      </div>
+
+      <div class="mode-list">
+        <!-- Generato via JS -->
+      </div>
+    </div>
+
+    <!-- SCREEN 3: SETUP (Pre-game settings) -->
+    <div id="screen-setup" class="screen">
+      <header class="app-header back-header">
+        <button class="btn-icon" onclick="app.nav.back()">←</button>
+        <div class="header-title" id="setup-title">Setup</div>
+      </header>
+      <div class="setup-content" id="setup-content">
+        <!-- Generato via JS in base alla modalità -->
+      </div>
+      <div class="bottom-action">
+        <button class="btn-primary" onclick="app.game.start()">GIOCA ORA</button>
+      </div>
+    </div>
+
+    <!-- SCREEN 4: GAME ACTIVE -->
+    <div id="screen-game" class="screen">
+      <!-- Generato dinamicamente in base alla logica del gioco -->
+    </div>
+
+    <!-- SCREEN 5: RESULTS -->
+    <div id="screen-results" class="screen">
+      <div class="results-content flex-center" id="results-content">
+        <!-- Generato dinamicamente -->
+      </div>
+      <div class="bottom-action">
+        <button class="btn-primary" onclick="app.nav.go('home')">TORNA ALLA HOME</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Audio Effects (opzionale) -->
+  <audio id="sfx-click" src="assets/click.mp3" preload="auto"></audio>
+  <audio id="sfx-success" src="assets/success.mp3" preload="auto"></audio>
+  <audio id="sfx-fail" src="assets/fail.mp3" preload="auto"></audio>
+  <audio id="sfx-tick" src="assets/tick.mp3" preload="auto"></audio>
+  <audio id="sfx-explode" src="assets/explode.mp3" preload="auto"></audio>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
