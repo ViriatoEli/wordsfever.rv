@@ -57,7 +57,7 @@
     }
   }
 
-  const COUNT  = 100;
+  const COUNT  = 130;
   const embers = Array.from({ length: COUNT }, () => new Ember(true));
 
   let running = true;
