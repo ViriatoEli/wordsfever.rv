@@ -1,2 +1,0 @@
-C:/Users/viria/Documents/rv/words_fever_project/words_fever/flutter/build/.cxx/release/36f35603/armeabi-v7a/CMakeFiles/edit_cache.dir
-C:/Users/viria/Documents/rv/words_fever_project/words_fever/flutter/build/.cxx/release/36f35603/armeabi-v7a/CMakeFiles/rebuild_cache.dir
